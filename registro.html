@@ -1,12 +1,15 @@
 <!DOCTYPE html>
 <html lang="es">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Registro de Alumnos</title>
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css">
+    <link rel="stylesheet" href="estilos.css">
 </head>
-<body>
+
+<body style="background-color:#e9e9e9; font-family: Arial;">
     <nav>
         <a href="index.html" style="text-decoration: none;"><i class="bi bi-reply-fill"></i>Volver al Listado</a>
     </nav>
@@ -15,21 +18,24 @@
         <p>Complete los datos del nuevo Estudiante.</p>
         <hr>
         <form action="index.html">
-            <label><i class="bi bi-person"></i><b>Nombres Completos:</b></label>
-            <input type="text" placeholder="Ej Ana Lucia" required><br>
-            <label><i class="bi bi-person-fill" required></i><b>Apellidos</b></label>
-            <input type="text" placeholder="Ej Torres Vega" required><br>
-            <label><b>Correo Electrónico</b></label>
-            <input type="text" placeholder="alumno@instituto.edu.pe"><br>
-            <label><b>Carrera</b></label>
-            <select>
+            <label><i class="bi bi-person"></i><b>Nombres Completos:</b></label><br>
+            <input type="text" placeholder="Ej Ana Lucia" size="60" required><br>
+            <label><i class="bi bi-person-fill"></i><b>Apellidos</b></label><br>
+            <input type="text" placeholder="Ej Torres Vega" size="60" required><br>
+            <label><b><i class="bi bi-envelope"></i>Correo Electrónico</b></label><br>
+            <input type="text" placeholder="alumno@instituto.edu.pe" size="60" required><br>
+            <label><b><i class="bi bi-house-door-fill"></i>Carrera</b></label><br>
+            <select style="width: 457px;">
                 <option value="">--Seleccionar--</option>
-                <option value="Desarrollo de Software"></option>
-                <option value="Diseño Gráfico</option>
-                <option value=""></option>
+                <option value="Desarrollo de Software">Desarrollo de Software</option>
+                <option value="Diseño Gráfico">Diseño Gráfico</option>
+                <option value="Marketing">Marketing</option>
             </select>
+            <br><br>
+            <button type="submit" style="width:457px;background-color:black;color:white;padding:10px;border:none;font-weight:bold;"><i class="bi bi-box-arrow-in-down"></i>GUARDAR DATOS</button>
         </form>
 
     </main>
 </body>
+
 </html>
